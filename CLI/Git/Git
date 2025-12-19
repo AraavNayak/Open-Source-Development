@@ -8,6 +8,8 @@ Unstaged changes = Changes you've made that Git has noticed but not yet marked t
 
 ------------
 
+>>> REVIEWING STATUS AND HISTORY
+
 To show state of repo: which branch you're on, staged and unstaged changes.
 - git status
 
@@ -28,6 +30,8 @@ To see all changes from commit A to B:
 - git diff <commit A> <commit B>
 
 
+>>> STAGING AND UNSTAGING CHANGES
+
 To stage all changes:
 - git add .
 
@@ -41,6 +45,8 @@ Unstage all changes:
 Undo all unstaged changes (use with caution):
 - git checkout .
 
+>>> HANDLING COMMITS
+
 Create commit with message:
 - git commit -m "message to describe commit"
 
@@ -50,11 +56,15 @@ To edit most recent commit with staged changes:
 To revert:
 - git revert <commit id>
 
+>>> BRANCHES
+
 To create a branch:
 - git branch <branch name>
 
 To switch to a diff branch:
 - git checkout <branch name>
+
+>>> SYNCHRONIZING REMOTE AND LOCAL
 
 Fetch changes for this brnach from remote to local (but don't apply these changes)
 - git fetch
