@@ -1,0 +1,76 @@
+Git CLI
+
+------------------
+Basic terminology:
+
+Staged changes = Changes that have been marked to go into next commit snapshot
+Unstaged changes = Changes you've made that Git has noticed but not yet marked to be included in next commit
+
+------------
+
+>>> REVIEWING STATUS AND HISTORY
+
+To show state of repo: which branch you're on, staged and unstaged changes.
+- git status
+
+To see history of current branch and list of commits (q to quit)
+- git log
+
+Details of most recent commit
+- git show
+- git show <commit id>
+
+To see all unstaged changes
+- git diff
+
+To see all staged changes
+- git diff --staged
+
+To see all changes from commit A to B:
+- git diff <commit A> <commit B>
+
+
+>>> STAGING AND UNSTAGING CHANGES
+
+To stage all changes:
+- git add .
+
+To stage all changes for certain files:
+- git add <filename(s)>
+
+Unstage all changes:
+- git reset
+- git reset -p
+
+Undo all unstaged changes (use with caution):
+- git checkout .
+
+>>> HANDLING COMMITS
+
+Create commit with message:
+- git commit -m "message to describe commit"
+
+To edit most recent commit with staged changes:
+- git commit --amend
+
+To revert:
+- git revert <commit id>
+
+>>> BRANCHES
+
+To create a branch:
+- git branch <branch name>
+
+To switch to a diff branch:
+- git checkout <branch name>
+
+>>> SYNCHRONIZING REMOTE AND LOCAL
+
+Fetch changes for this brnach from remote to local (but don't apply these changes)
+- git fetch
+
+Fetch changes for this branch from remote to local, and update current local branch to match remote branch
+- git pull
+
+Push changes for this branch from local to remote
+- git push

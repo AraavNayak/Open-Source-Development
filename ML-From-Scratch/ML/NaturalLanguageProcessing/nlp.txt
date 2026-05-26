@@ -1,0 +1,20 @@
+Natural Language Processing - NLP
+
+Allows computers to understand natural language (usually written, can be spoken)
+Goal: turn complex sentences into structured mathematical format
+*Context and Attention are very important here! Eg. distinguishing between 'bank' in 'I went to the bank to deposit money' and 'I sat on the river bank'
+
+Intuition:
+- break sentences down into pieces "tokens" (words or sub-words)
+    "The cube sat" -> ["The", "cube", "sat]
+- Word embeddings "Map"
+    Instead of giving a word a random ID number, represent each word as a list of coordinates in a multi-dim space
+
+TAKEAWAY: multi-dim coordinates allow the computer to calculate mathematical relationships and similarities between different words.
+
+
+
+
+NLTK -> excels at understanding how a sentence is built
+
+

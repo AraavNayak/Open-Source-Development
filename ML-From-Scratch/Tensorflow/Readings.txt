@@ -1,0 +1,32 @@
+Learning Tensorflow: A Guide to Building Deep Learning Systems (Tom Hope, Yehezkel Resheff, Itay Lieder)
+------------------------------
+
+Tensorflow is Google's framework for deep learning, released in 2015
+    Abstraction libraries include Keras, TF-Slim
+
+Deep learning applications: computer vision, understanding content of images, natural language, speech, drug discovery
+    Within natural langauge, there is search, translation, NLU, summarization
+    Within computer vision, image captioning, image segmentation
+
+Deep learning methods (AKA deep neural networks) inspired by human brain's vast network of interconnected neurons
+    DL -> feed raw inputs like pixel values in an image and transform them into useful representation by extracting higher level features (edges/shapes in images)
+    The networks automatically learn to build abstract representations by adapting and correcting themselves, fitting patterns observed in data
+
+Deep networks are typically trained on large amonuts of image data, which takes a lot of time, effort, and resources.
+    In a growing trend, researchers are publicly releaing pre-trained models (NN's that are already trained and that can be applied to data)
+
+Tensors are the standard way of representing data in deep learning. Tensors are multidimensional arrays.
+    eg. RGB images are represented as tensors (three dimensional arrays), with each pixel ahving three values corresponding to red, green, and blue
+Computation with tensors is approached as a dataflow graph
+    In this graph, nodes represent operations and edges represnt data (tensors) flowing around the system
+
+
+SOFTMAX REGRESSION MODEL
+- Simple classifier. Used as last layer of NN for classification.
+        Binary classification (logistic regr) used to classify between two classes. 
+        Softmax is a generationalization used for multiple possible classes.
+        Softmax works by turning raw class scores into probabilities by exponentiating them and normalizing so they sum to 1
+        By itself, softmax has ZERO SPATIAL AWARENESS of pixels in image.
+- Figures out, for each pixel in the image, which digits tend to ahve high or low values in that location
+
+

@@ -1,0 +1,24 @@
+Transformers: Type of neural network architecture.
+
+Recap:
+Neural networks are very effective for analyzing complex forms of data (images, audio, videos, text)
+BUT there are different types of neural networks OPTIMIZED for different types of data
+        CNN's used for analyzing images...designed to mimic human vision.
+
+Neural networks have been effective at analyzing images for a while...but we didn't know how to do it for text (translation, summarization, generation, etc).
+Until transformers, we used Recurrent Neural Networks (RNN's) to translate language....trasnlated words one by one sequentially. 
+Couldn't handle long paragraphs (no attention), coudln't parallelize well despite adding GPU's.
+
+In 2017 Google and researchers at Toronto discovered transformers. Then came GPT-3, Bert, and so on.
+Three mechanisms power transformers:
+    1. Positional Encoding
+            Consider task fo tranlating a sentence from English to French. Instead of looking at words sequentially,
+            assign each word a vector (depending on its position in the sentence) BEFORE feeding into NN.
+            This way the network can remember and understand context based on a word's positional encoding (word order).
+            Useful because --> Preserves sentence structure, enables parallel processing, Made it more efficient to train than RNN's.
+    2. Attention
+            "Attention is all you need" paper. Attention allows model to focus on different parts of input sentence
+            when generating each output token. Instead of compressing the entire sentence into a single fixed representation, 
+            attention lets the model dynamically decide which words are most relevant for the current prediction.
+            Useful because --> dynamic output generation, more context aware, 
+    3. Self-Attention

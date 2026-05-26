@@ -1,0 +1,35 @@
+MacOS Terminal (Command Line Interface)
+
+To find out where we are in the terminal:
+- pwd
+- open /Users/AraavNayak/Desktop
+
+To see what the directory has: use list command.
+- ls
+
+To move between directories (change directory):
+- cd [directory]
+
+To go back up to parent directory:
+- cd ..
+
+To switch to the current directory (no effect):
+- cd .
+
+To clear screen (pushes content up). Could also use Cmd+K
+- clear
+
+To switch to home directory:
+- cd ~
+
+To create a new file. This creates a new file in the current directory.
+- touch test_file.txt
+
+To open file:
+- open test_file.txt
+
+To make a directory (empty folder):
+- mkdir test_directory
+
+To remove file:
+- rm test_file.txt
