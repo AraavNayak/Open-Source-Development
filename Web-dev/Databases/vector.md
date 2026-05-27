@@ -2,7 +2,7 @@
 Examples:
 * Pinecone
 * Weaviate
-* FAISS
+* FAISS (Facebook AI Similarity Search)
 These are huge in AI.
 
 Problem with normal databases
