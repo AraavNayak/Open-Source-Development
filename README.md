@@ -29,8 +29,8 @@ This repository documents my exploration of various aspects of computer science.
       <li>Frontend + frameworks</li>
       <li>Backend + frameworks </li>
       <li>Databases (Relational vs nonrelational, Document, Graph, Key-Value, Vector, NoSQL, etc)</li>
-      <li>Website development lifecycle (*)</li>
-      <li>Cloud computing/AWS EC2 (*)</li>
+      <li>Website development lifecycle</li>
+      <li>Cloud computing/AWS EC2</li>
     </ul>
   </li>
   
